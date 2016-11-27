@@ -41,22 +41,33 @@
 
             <!--inner walls-->
             <a-assets>
-                <img id="texture" src="assets/img/texture.jpg">
+                <img id="texture" src="assets/img/overworld_bg.png">
             </a-assets>
-            <a-box src="#texture" width="6" height="1" dept="0" position="0 0 3" ></a-box>
-            <a-box src="#texture" width="6" height="1" dept="0" position="3 0 0" rotation="0 -90 0" ></a-box>
-            <a-box src="#texture" width="6" height="1" dept="0" position="0 0 -3" rotation="0 0 0" ></a-box>
-            <a-box src="#texture" width="6" height="1" dept="0" position="-3 0 0" rotation="0 -90 0" ></a-box>
+            <a-box src="#texture" width="6" height="1" dept="0" position="0 0.5 9" ></a-box>
+            <a-box src="#texture" width="6" height="1" dept="0" position="4 0.5 0" rotation="0 -90 0" ></a-box>
+            <a-box src="#texture" width="6" height="1" dept="0" position="-3.45 2.54 -3" rotation="0 0 0" ></a-box>
+            <a-box src="#texture" width="6" height="1" dept="0" position="-7.76 1.67 2.61" rotation="0 -90 0" ></a-box>
 
 
+            <!--tube-->
             <a-assets>
                 <img id="tubebottom" src="assets/img/tubebottem.png">
             </a-assets>
-            <a-cylinder src="#tubebottom" height="3" radius="1" positon="0 0 5"></a-cylinder>
-            <a-cylinder src="#tubebottom" height="1" radius="1.2" positon="0 10 5 "></a-cylinder>
+            <a-cylinder position="4 0 -3" rotation="0 15 0" height="5" src="#tubebottom"></a-cylinder>
+            <a-cylinder position="4 2.5 -3" rotation="0 15 0" height="1" radius="1.2" src="#tubebottom"></a-cylinder>
 
+            <!--box-->
+            <a-assets>
+                <img id="boxmark" src="assets/img/mariobox.png">
+            </a-assets>
+            <a-box src="#boxmark" color="yellow" width="1" height="1" dept="0" position="1.17 2.53 -2.98" ></a-box>
+            <a-box src="#boxmark" color="yellow" width="1" height="1" dept="0" position="-4.06 0.5 3.01" ></a-box>
 
-            <a-plane color="green" width="20" height="20" position="0 0 0"rotation="-90 0 0"></a-plane>
+            <!--floor-->
+            <a-assets>
+                <img id="grass" src="assets/img/grass_texture_01.jpg">
+            </a-assets>
+            <a-plane src="#grass" width="20" height="20" position="0 0 0"rotation="-90 0 0"></a-plane>
 
         </a-scene>
 
